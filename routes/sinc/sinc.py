@@ -17,7 +17,7 @@ async def sync():
     try:
         logging.log.warning("Inicia llamado endpoint")
 
-        # api_call_app.create_api_call(endpoint="/sync", params={"method": "GET"}, result="OK")
+        api_call_app.create_api_call(endpoint="/sync", params={"method": "GET"}, result="OK")
         logging.log.warning("Termina llamado endpoint")
         return jsonable_encoder({"status": "OK"})
 
